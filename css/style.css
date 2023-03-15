@@ -1,20 +1,27 @@
 @import "./global/global.css";
 
-@import "./utilidades/cores.css" ;
+@import "./utilidades/cores.css";
 
-@import "./utilidades/fontes.css" ;
+
+
+
+@import "./utilidades/fontes.css";
 
 @import "./utilidades/componentes.css";
 
 @import "./global/menu.css";
 
 
+
 @import "./home/introducao.css";
 
 @import "./home/bikes.css";
 
+@import "./home/vantagens.css";
 
+@import "./home/parceiros.css";
 
+@import "./home/depoimento.css"
 
 
 

@@ -1,11 +1,12 @@
 .choose-bike{
-    padding: 60px 0px 0px 0;
+    padding: 60px 0px 60px 0;
 }
 
 .choose-bike h2 {
     max-width: 1200px;
     padding: 0 20px;
     border-radius: border-box;
+    padding-bottom: 40px;
 }
 
 .container-choose{
@@ -14,27 +15,60 @@
     padding: 0 20px;
     display: flex;
     gap: 40px;
+    overflow: auto;
+}
+
+.bikes-choose-list{
+    flex: 1;
+    min-width: 280px;
+    align-items: start;
 }
 
 
 
-.bike-title{
-    padding: 16px 20px;
-    
+.bikes-choose-list img {
+    margin-bottom: 16px;
 }
 
-.bike-title h3{
+.bikes-choose-list h3{
     margin-bottom: 8px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.bike-title h3::before{
+.bikes-choose-list h3::before{
     content: '';
     display: inline-block;
     width: 12px;
     height: 8px;
     background: var(--p1);
-    position: absolute;
-    left: -20px;
-    top: 4px;
+   margin-right: 8px;
+ 
+   
+}
+
+.bikes-choose-list span{
+    margin-left: 20px;
+}
+
+
+.bikes-choose-list a:hover h3::before{
+    transition: 0.3s;
+    width: 36px;
+
+   
+   
+}
+
+
+.link-choose-list{
+    color: inherit;
+}
+
+
+@media (max-width:750px) {
+    .container-choose {
+        gap: 20px;
+    }
 }

@@ -1,0 +1,103 @@
+#nossas-vantagens{
+    background-color: var(--c11);
+    box-shadow: inset 0 -70px rgb(255, 255, 255),
+     inset  0 70px rgb(255, 255, 255) ;
+  
+}
+
+.vantagens-container {
+max-width: 1400px;
+padding: 0 20px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+}
+
+
+.vantagens-texto-container{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    
+   
+}
+
+.vantagens-texto-container span  {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+} 
+
+
+.vantagens-texto-container h2 {
+    margin-bottom: 30px;
+}
+
+.descricao-vantagens-paragrafo{
+   
+    margin-bottom: 20px;
+}
+
+.link-vantagem{
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid var(--p1);
+    margin-bottom: 60px;
+}
+
+.vantagens-lista{
+    display: flex;
+    gap: 40px;
+}
+
+.vantagens-lista h3{
+    margin-bottom: 8px;
+}
+
+
+.vantagens-lista h3::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../img/icones/bicicletas/eletrica.svg);
+    margin-bottom: 8px;
+}
+
+.imagem-vantagem img{ 
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:800px) {
+    .vantagens-container {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-vantagem{
+        display: none;
+    }
+
+    #nossas-vantagens{
+        box-shadow: initial;
+    }
+
+    .vantagens-texto-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+       
+    }
+
+   
+
+    .link-vantagem {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .vantagens-lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

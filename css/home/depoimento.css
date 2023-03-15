@@ -1,0 +1,68 @@
+#depoimento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--p1);
+    overflow: hidden;
+
+}
+
+.depoimento-img img{
+    border-radius: initial;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.quote{
+   align-self: end;
+ padding: 80px 80px;
+}
+
+.texto-depoimento{
+ 
+    font-weight: 900;
+    font-family: 'Merriweather';
+    font-style: italic;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.texto-depoimento::before {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 40px;
+    background: url(../../img/gerais/“.svg);
+    position: absolute;
+    left: -40px;
+    top: -15px;
+
+}
+
+.texto-depoimento::after {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 40px;
+    background: url(../../img/gerais/aspa2.svg);
+    position: relative;
+   top: 20px;
+    
+
+}
+
+@media (max-width:900px) {
+    #depoimento {
+        grid-template-columns: 1fr;
+    }
+
+    .quote{
+ 
+       text-align: center;
+       padding: 40px 40px
+       ;
+    
+    }
+
+}
