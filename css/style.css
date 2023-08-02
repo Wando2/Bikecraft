@@ -11,6 +11,8 @@
 
 @import "./global/menu.css";
 
+@import "./global/footer.css";
+
 
 
 @import "./home/introducao.css";
@@ -21,9 +23,21 @@
 
 @import "./home/parceiros.css";
 
-@import "./home/depoimento.css"
+@import "./home/depoimento.css";
+
+@import "./home/planos.css";
 
 
 
+@import "./termos/termos.css";
+
+@import "./bicicletas/bicicletas.css";
 
 
+
+@import "./seguros/seguros.css"; 
+@import "./seguros/nossas-vantagens.css";
+@import "./seguros/perguntas.css";
+
+@import "./bicicletas/bicicleta.css";
+@import "./bicicletas/conheca.css";

@@ -17,6 +17,13 @@ font: 600 0.75rem/1.35 'Poppins';
     line-height: 1.3;
 }
 
+.font-1-m-b {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
 .font-1-l{
     font: 600 1.5rem/1.3 'Poppins';
 }
@@ -83,6 +90,10 @@ font: 400 0.85rem/1.35 'Roboto';
     }
 
     .font-1-l{
+        font-size: 1.125rem;
+    }
+
+    .font-2-m{
         font-size: 1rem;
     }
 }

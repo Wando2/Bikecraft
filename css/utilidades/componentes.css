@@ -10,6 +10,7 @@
     line-height: 1.3;
     transition: 0.3s;
     border-radius: 4px;
+    max-width: max-content;
 
 }
 
@@ -17,6 +18,24 @@
     background: linear-gradient(#f1c540, #ad7503)
  }
 
+ .btn.seta{
+    display: flex;
+    align-items: center;
+ }
+
+ .btn.seta::after{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background: url(../../img/icones/seta.svg);
+    margin-left: 16px;
+    transition: 0.2s;
+ }
+
+ .btn.seta:hover::after{
+    transform: translateX(4px);
+ }
 @media(max-width: 600px) {
 
     .btn {
@@ -29,4 +48,40 @@
 
 .ponto-amarelo {
     color: var(--p1);
+}
+
+.titulo-interno-bg {
+    background: var(--c11);
+}
+
+.titulo-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+}
+
+.titulo-container p {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.container-2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+@media (max-width: 830px) {
+    .titulo-container{
+    
+        padding: 40px 20px;
+    
+    }
+    
+    .titulo-container p {
+        text-transform: lowercase;
+     
+    }
 }

@@ -1,0 +1,134 @@
+.container-vantagens.info-bike-interna ul{
+    grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
+    background-color: var(--c12);
+    padding: 32px;
+    border-radius: 4px;
+    gap: 40px 32px;
+    margin-bottom: 40px;
+
+}
+
+
+.bike-interna-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    padding-bottom: 40px;
+}
+
+.carrousel-bikes{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+   
+}
+
+.carrousel-bikes img{
+   min-width: 280px;
+   flex: 1;
+}
+
+.carrousel-bikes img:nth-child(1){
+  min-width: 100%;
+}
+
+.info-bike-interna{
+display: grid;
+
+}
+
+.info-bike-interna .texto-interno {
+    margin-bottom: 32px;
+}
+
+.comprar-agora{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px;
+    margin-bottom: 40px;
+
+}
+
+.comprar-agora a{
+grid-row: span 2;
+} 
+
+.comprar-agora span {
+    padding: 4px 8px;
+    background-color: var(--c12);
+    display: flex;
+    gap: 8px;
+    justify-items: center;
+    border-radius: 4px;
+}
+
+.info-bike-interna h3 {
+    margin-bottom: 12px;
+}
+
+.info-bike-interna ul li h3 {
+    margin-bottom: 0px;
+}
+
+
+.ficha-tecnica {
+    background-color: var(--c12);
+    padding: 26px 32px;
+    border-radius: 4px;
+}
+
+.ficha-tecnica ul{
+    display: grid;
+    gap: 6px ;
+}
+
+.ficha-tecnica li{
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+
+.ficha-tecnica li + li {
+    border-top: 1px solid var(--c11);
+    
+}
+
+.ficha-tecnica p {
+    padding: 5px 0px;
+}
+
+#container-choose{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+
+
+@media (max-width: 850px){
+    .bike-interna-container{
+        grid-template-columns: 1fr;
+
+    }
+
+    .info-bike-interna{
+       grid-row: 1;
+    }
+
+   .bike-interna-titulo .titulo-container{
+        padding: 40px 20px;
+    }
+
+
+    
+}
+
+@media (max-width: 450px){
+    .comprar-agora {
+        margin-bottom: 24px;
+    }
+}
+

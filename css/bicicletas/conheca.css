@@ -1,0 +1,45 @@
+.conheca-seguros-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  
+}
+
+.conheca-seguros{
+    background-color: var(--c11);
+    box-shadow: inset 0 120px white, inset 0 -120px var(--c12);
+}
+
+.imagem-seguro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conheca-texto{
+      padding: 180px 0px;
+}
+
+.conheca-texto h2{
+     margin-bottom: 32px;
+}
+
+.conheca-texto p{
+     margin-bottom: 20px;
+}
+
+@media (max-width: 850px){
+    .conheca-seguros-container{
+        grid-template-columns: 1fr;
+    }
+    .conheca-texto{
+        grid-row: 1;
+        padding: 160px 0px 0 0px;
+
+    }
+
+    .conheca-seguros{
+    background-color: var(--c11);
+    box-shadow: inset 0 120px white, inset 0 -60px var(--c12);
+}
+}
