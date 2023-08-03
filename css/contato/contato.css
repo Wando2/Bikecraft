@@ -1,0 +1,114 @@
+
+#contato{
+     background: linear-gradient(var(--c11) 500px, var(--c1) 0px);
+}
+
+.nosso-contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    
+}
+
+.nosso-contato section{
+    padding: 60px;
+    background-color: var(--c12);
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nosso-contato section h2{
+    margin-bottom: 60px;
+}
+
+.enderecos-contato{
+    margin-bottom: 32px;
+}
+
+.nosso-contato p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    }
+
+.enderecos-contato p:nth-child(1)::before{
+    content: '';
+    background-image: url(../../img/icones/contato/local.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    }
+
+.enderecos-contato p:nth-child(2),.enderecos-contato p:nth-child(3){
+    margin-left: 28px;
+
+    }
+
+    .nosso-contato address{
+        margin-bottom: 32px;
+    }
+
+    .nosso-contato address p:nth-child(1)::before{
+        content: '';
+        background-image: url(../../img/icones/contato/email.svg);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        }
+
+    .nosso-contato address p:nth-child(2){
+        margin-left: 28px;
+        }
+
+    .telefone-contato{
+        margin-bottom: 52px;
+    }    
+        
+     .telefone-contato p::before{
+        content: '';
+        background-image: url(../../img/icones/contato/telefone.svg);
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        }
+
+       .redes-sociais{
+           display: flex;
+           gap: 32px;
+           margin-left: 28px;
+       }
+
+
+       #formulario{
+         padding: 60px;
+        background-color: white;
+        border-radius: 0px 4px 4px 0px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+       }
+
+       @media (max-width: 800px){
+        .nosso-contato{
+            grid-template-columns: 1fr;
+        }
+
+        #formulario{
+            border-radius: 0 0 4px 4px;
+        }
+
+        .nosso-contato section{
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nosso-contato section, #formulario{
+            padding: 30px;
+        }
+
+         .telefone-contato{
+        margin-bottom: 32px;
+        }
+
+        .nosso-contato section h2{
+        margin-bottom: 40px;
+        }   
+
+
+       }

@@ -12,7 +12,7 @@
 @import "./global/menu.css";
 
 @import "./global/footer.css";
-
+@import "./utilidades/formulario.css";
 
 
 @import "./home/introducao.css";
@@ -41,3 +41,7 @@
 
 @import "./bicicletas/bicicleta.css";
 @import "./bicicletas/conheca.css";
+
+
+@import "./contato/contato.css";
+@import "./utilidades/formulario.css";
