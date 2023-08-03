@@ -11,6 +11,8 @@
     transition: 0.3s;
     border-radius: 4px;
     max-width: max-content;
+    cursor: pointer;
+    border: none;
 
 }
 
@@ -84,4 +86,6 @@
         text-transform: lowercase;
      
     }
+
+    
 }

@@ -1,0 +1,50 @@
+#nosso-endereco{
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    
+}
+#nosso-endereco h2{
+    margin-bottom: 60px;
+    grid-column: span 2;
+}
+
+.foto-mapa img{
+    border-radius: 4px 4px 0 0;
+}
+
+.info-endereco{
+    background-color: white;
+    padding: 36px 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 16px;
+}
+
+.info-endereco h3,.info-endereco .horario{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600px;
+}
+
+
+.info-endereco h3::before{
+    content: '';
+    background: var(--p1);
+    width: 12px;
+    height: 8px;
+   
+    display: inline-block;
+}
+
+.info-rua{
+    display: grid;
+    gap: 8px;
+    border-left: 1px solid var(--c2);
+    padding-left: 12px;
+    margin-left: 24px;
+}
+
