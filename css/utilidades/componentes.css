@@ -53,7 +53,7 @@
 }
 
 .titulo-interno-bg {
-    background: var(--c11);
+    background: var(--c11) url('../../img/icones/decoracao/dec4.svg') no-repeat top 60px right 80px;
 }
 
 .titulo-container{
@@ -88,4 +88,10 @@
     }
 
     
+}
+
+@media (max-width: 500px){
+    .titulo-interno-bg {
+            background: var(--c11)
+    }
 }

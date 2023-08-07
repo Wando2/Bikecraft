@@ -1,7 +1,7 @@
 #depoimento{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: var(--p1);
+    background: var(--p1) url('../../img/icones/decoracao/dec2.svg') no-repeat right 40px top 40px;
     overflow: hidden;
 
 }
@@ -19,7 +19,7 @@
 }
 
 .texto-depoimento{
- 
+    
     font-weight: 900;
     font-family: 'Merriweather';
     font-style: italic;

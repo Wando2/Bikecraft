@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 40px;
+    place-items: start;
     
 }
 #nosso-endereco h2{
@@ -20,6 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 16px;
+ 
 }
 
 .info-endereco h3,.info-endereco .horario{
@@ -48,3 +50,35 @@
     margin-left: 24px;
 }
 
+@media (max-width: 950px) {
+    .info-endereco{
+        padding: 20px;
+        
+    }
+
+    .info-rua{
+        grid-column: span 2;
+    }
+
+
+}
+
+@media (max-width: 600px){
+
+
+    #nosso-endereco{
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px 0;
+       
+    }
+
+    #nosso-endereco h2{
+        margin-bottom: 0;
+        grid-column: span 1;
+    }
+
+    
+
+  
+} 

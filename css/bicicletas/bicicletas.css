@@ -8,10 +8,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     justify-items: start;
+    background: url('../../img/icones/decoracao/dec8.svg') no-repeat top 60px right 20px;
 }
 
 .bicicletas-container:nth-child(odd){
-   background: linear-gradient(to right,white 20%,var(--c11) 0%)
+   background: linear-gradient(to right,white 20%,var(--c11) 0%);
+
 }
 
 .bicletas-texto {
