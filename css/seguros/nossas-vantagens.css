@@ -5,11 +5,11 @@
 }
 
 
-.container-vantagens h2 {
+.nossas-vantagens h2 {
     margin-bottom: 90px;
 }
 
-.container-vantagens ul{
+.nossas-vantagens ul{
      display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px, max-content));
     gap: 40px 80px;
