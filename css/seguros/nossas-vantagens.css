@@ -17,9 +17,14 @@
    
 }
 
-.container-vantagens ul li {
+.nossas-vantagens ul li {
     display: grid;
     gap: 8px;
+}
+
+.nossas-vantagens ul li img {
+    width: 24px;
+    height: 24px;
 }
 
 

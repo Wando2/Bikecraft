@@ -1,4 +1,5 @@
 .container-vantagens.info-bike-interna ul{
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
     background-color: var(--c12);
     padding: 32px;
