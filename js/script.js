@@ -47,3 +47,36 @@ function addEvent(botao) {
 }
 
 botao.forEach(addEvent);
+
+
+// carrousel galeria
+
+const galeria = document.querySelectorAll('.carrousel-bikes img');
+
+const galeriaContainer = document.querySelector('.carrousel-bikes');  
+
+
+console.log(galeria);
+console.log(galeriaContainer);
+
+
+function trocarImagem(event) {
+    const imagem = event.currentTarget;
+    const mediaQuery = window.matchMedia('(min-width: 950px)').matches;
+    if (mediaQuery) { 
+        galeriaContainer.prepend(imagem);
+    }
+}
+
+function addEventGaleria(imagem) { 
+    imagem.addEventListener('click', trocarImagem); 
+}
+
+galeria.forEach(addEventGaleria);
+
+// simple anime
+
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}
+
