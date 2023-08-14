@@ -13,14 +13,37 @@ menu.forEach(menuAtivo);
 // passagem de parametro por links para o formulario
 
 const params = new URLSearchParams(window.location.search);
-console.log(params);
 
 function ativarFormulario(param) {
     const element = document.getElementById(param)
-    console.log(element)
     if (element) {
         element.checked = true;
     }
 }
 
 params.forEach(ativarFormulario);
+
+
+// perguntas frequentes toggle
+
+const botao = document.querySelectorAll('.perguntas-frequentes button');
+// console.log(botao[0].getAttribute('aria-expanded'));
+
+function togglePerguntas(event) {
+    const botao = event.currentTarget;
+    const resposta = document.getElementById(botao.getAttribute('aria-controls'));
+    
+    resposta.classList.toggle('active');
+    botao.setAttribute('aria-expanded', botao.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+    console.log(botao.getAttribute('aria-expanded'));
+
+   
+}
+
+
+function addEvent(botao) {
+    botao.addEventListener('click', togglePerguntas);
+
+}
+
+botao.forEach(addEvent);
